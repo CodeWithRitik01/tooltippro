@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./tooltip.css";
 
 
-function Toolkit({position, children}){
+function Tooltip({position, children}){
    const [isVisible, setIsVisible] = useState(false);
   
    return(
@@ -15,4 +15,4 @@ function Toolkit({position, children}){
    )
 }
 
-export default Toolkit;
+export default Tooltip;

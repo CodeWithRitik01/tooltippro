@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Toolkit from './Toolkit';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Toolkit  position="top">
+            <button  className='but-top'>T</button>
+        </Toolkit>
+        <Toolkit position="right">
+            <button className='but-right'>R</button>
+        </Toolkit>
+        <Toolkit position="bottom">
+            <button className='but-bottom'>B</button>
+        </Toolkit>
+        <Toolkit position="left">
+            <button className='but-left'>L</button>
+        </Toolkit>
+        <h3>Hover over me!</h3>
     </div>
   );
 }
